@@ -52,6 +52,7 @@ screen.listen()
 while True:
 
     # creating a new segment of the snake
+    # and redraw a food for the snake
     if snake[0].distance(food) < 10:
         food.goto(randrange(-300, 300, 20), randrange(-300, 300, 20))
         snake_segment = turtle.Turtle()
