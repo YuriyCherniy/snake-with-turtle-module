@@ -14,7 +14,6 @@ screen.tracer(0)
 # draw a game field border
 border = turtle.Turtle()
 border.hideturtle()
-border.speed(0)
 border.penup()
 border.goto(-311, 311)
 border.pendown()
@@ -29,7 +28,6 @@ snake = []
 for i in range(3):
     snake_segment = turtle.Turtle()
     snake_segment.shape('square')
-    snake_segment.speed(0)
     snake_segment.penup()
     if i > 0:
         snake_segment.color('gray')
@@ -37,7 +35,6 @@ for i in range(3):
 
 # draw a food for the snake
 food = turtle.Turtle()
-food.speed(0)
 food.shape('circle')
 food.penup()
 food.goto(randrange(-300, 300, 20), randrange(-300, 300, 20))
@@ -58,7 +55,6 @@ while True:
         snake_segment = turtle.Turtle()
         snake_segment.shape('square')
         snake_segment.color('gray')
-        snake_segment.speed(0)
         snake_segment.penup()
         snake.append(snake_segment)
 
